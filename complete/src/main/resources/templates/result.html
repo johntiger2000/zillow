@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Get Search Result from zillow</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Search Result</h1>
+    <p th:text="'street: ' + ${searchResult.street}" />
+    <p th:text="'citystatezip: ' + ${searchResult.citystatezip}" />
+    <p th:text="'result: ' + ${searchResult.result}" />
+    <a href="/getSearchResult">Submit another query</a>
+</body>
+</html>

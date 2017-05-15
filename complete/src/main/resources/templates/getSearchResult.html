@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Get Search Result from zillow</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Input address to get result:</h1>
+    <form action="#" th:action="@{/getSearchResult}" th:object="${searchResult}" method="post">
+    	<p>Street: <input type="text" th:field="*{street}" /></p>
+        <p>City, State, Zip: <input type="text" th:field="*{citystatezip}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
